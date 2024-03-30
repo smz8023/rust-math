@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BigInteger Operations with Rust and Wasm</title>
+    <script type="module">
+        import init, { add, subtract, multiply, divide } from './math.js';
+
+        async function run() {
+            await init();
+            
+            // Assuming bigint strings are passed to Rust functions
+            console.log("Add:", add("12345678901234567890123423234234456789.1333345", "98765432109876543210.445423124253465743"));
+            console.log("Subtract:", subtract("98765432109876543210", "12345678901234567890"));
+            console.log("Multiply:", multiply("12345678901234567890", "2"));
+            console.log("Divide:", divide("12", "3.1", 14));
+            console.log("Divide:", divide("98765432109876543210", "2", 4));
+
+        }
+
+        run();
+    </script>
+</head>
+<body>
+    <h1>Check the console for outputs</h1>
+</body>
+</html>
