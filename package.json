@@ -1,0 +1,17 @@
+{
+  "name": "math",
+  "collaborators": [
+    "shaomingzhen.smz <shaomingzhen.smz@sunyur.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "math_bg.wasm",
+    "math.js",
+    "math.d.ts"
+  ],
+  "module": "math.js",
+  "types": "math.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
